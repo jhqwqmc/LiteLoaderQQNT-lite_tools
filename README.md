@@ -8,6 +8,10 @@ LiteLoaderQQNT 插件 - 轻量工具箱，优化 QQNT 使用体验。
 
 LiteLoaderQQNT 本体：[LiteLoaderQQNT](https://github.com/mo-jinran/LiteLoaderQQNT)
 
+## 提示
+
+> 当前版本没有适配 LiteLoaderQQNT Alpha (1.0.0) 即使修改 manifest_version 版本也不能正常运行，不要做无用的尝试并提相关 Issue。
+
 ## 使用方法
 
 ### 从插件市场安装（推荐）
