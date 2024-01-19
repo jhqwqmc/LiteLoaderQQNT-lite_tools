@@ -12,7 +12,7 @@ LiteLoaderQQNT 本体：[LiteLoaderQQNT](https://github.com/mo-jinran/LiteLoader
 
 > **不要在 QQ 官方群聊发送*任何*可以看出你使用了第三方插件的截图**
 >
-> LiteLoaderQQNT Alpha (1.0.0) 用户请拉取 v4 分支，目前仍在开发中
+> LiteLoaderQQNT Alpha (1.0.0) 用户请切换 v4 分支
 
 ## 使用方法
 
