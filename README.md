@@ -1,18 +1,18 @@
 <p align=center>
-  <img src="./icon.png" />
+  <img width="192" alt="icon" height="192" src="./icon.png" />
 </p>
 
-# LiteLoaderQQNT-lite_tools
+<h1 align="center">轻量工具箱</h1>
 
-LiteLoaderQQNT 插件 - 轻量工具箱，优化 QQNT 使用体验。
+LiteLoaderQQNT 插件 - 轻量工具箱 —— 轻量 · 优雅 · 高效
 
 LiteLoaderQQNT 本体：[LiteLoaderQQNT](https://github.com/mo-jinran/LiteLoaderQQNT)
 
-## 注意事项
+> [!NOTE]
+> 该插件在 Windows 环境下测试开发，理论全平台兼容，但没有条件对另外两个平台进行测试
 
+> [!CAUTION]
 > **不要在 QQ 官方群聊发送*任何*可以看出你使用了第三方插件的截图**
->
-> LiteLoaderQQNT Alpha (1.0.0) 用户请切换 v4 分支
 
 ## 使用方法
 
@@ -22,7 +22,7 @@ LiteLoaderQQNT 本体：[LiteLoaderQQNT](https://github.com/mo-jinran/LiteLoader
 
 ### 从 Releases 中下载稳定版的方式进行安装
 
-- 下载 [最新发布版本](https://github.com/xiyuesaves/LiteLoaderQQNT-lite_tools/releases/latest) 中的 `lite_tools.zip`
+- 下载 [1.1.54](https://github.com/xiyuesaves/LiteLoaderQQNT-lite_tools/releases/tag/1.1.54) 中的 `lite_tools.zip`
 - 将压缩包中的内容解压到 [LiteLoaderQQNT](https://github.com/mo-jinran/LiteLoaderQQNT) 数据目录的 plugins 文件夹下
 - 重启 QQNT 安装完成
 
