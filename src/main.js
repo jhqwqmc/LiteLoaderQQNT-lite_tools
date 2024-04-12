@@ -2,13 +2,15 @@ const { ipcMain, dialog, shell, BrowserWindow } = require("electron");
 const path = require("path");
 const fs = require("fs");
 const crypto = require("crypto");
-const EventEmitter = require("events");
-class MainEvent extends EventEmitter {}
-const mainEvent = new MainEvent();
 
+const { options, updateOptions } = require("./main_modules/option");
 
 function onBrowserWindowCreated(window) {
+  try {
 
+  } catch (err) {
+    alert(err.message);
+  }
 }
 
 module.exports = {

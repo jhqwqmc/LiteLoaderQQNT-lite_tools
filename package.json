@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "test-main": "node test_main.js",
     "build": "node esbuild.config.js"
   },
   "keywords": [],

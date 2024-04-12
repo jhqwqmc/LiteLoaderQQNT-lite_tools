@@ -1,0 +1,297 @@
+{
+  "path": {
+      "root": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT",
+      "profile": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT",
+      "data": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\data",
+      "plugins": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins"
+  },
+  "versions": {
+      "qqnt": "9.9.9-22578",
+      "liteloader": "1.1.1",
+      "node": "18.18.2",
+      "chrome": "120.0.6099.56",
+      "electron": "28.0.0"
+  },
+  "os": {
+      "platform": "win32"
+  },
+  "package": {
+      "liteloader": {
+          "name": "liteloader-qqnt",
+          "version": "1.1.1",
+          "description": "QQNT 插件加载器 LiteLoaderQQNT —— 轻量 · 简洁 · 开源",
+          "main": "./src/init.js",
+          "private": true,
+          "license": "MIT",
+          "author": {
+              "name": "LiteLoaderQQNT",
+              "url": "https://github.com/LiteLoaderQQNT"
+          },
+          "homepage": "https://liteloaderqqnt.github.io",
+          "bugs": "https://github.com/LiteLoaderQQNT/LiteLoaderQQNT/issues",
+          "repository": {
+              "type": "git",
+              "url": "https://github.com/LiteLoaderQQNT/LiteLoaderQQNT.git"
+          }
+      },
+      "qqnt": {
+          "name": "qq-chat",
+          "version": "9.9.9-22578",
+          "private": true,
+          "description": "QQ",
+          "productName": "QQ",
+          "author": {
+              "name": "Tencent",
+              "email": "QQ-Team@tencent.com"
+          },
+          "homepage": "https://im.qq.com",
+          "sideEffects": true,
+          "bin": {
+              "qd": "externals/devtools/cli/index.js"
+          },
+          "main": "./app_launcher/index.js",
+          "buildVersion": "22578",
+          "isPureShell": true,
+          "isByteCodeShell": true,
+          "platform": "win32",
+          "eleArch": "x64"
+      }
+  },
+  "plugins": {
+      "chii_devtools": {
+          "manifest": {
+              "manifest_version": 4,
+              "type": "extension",
+              "name": "Chii DevTools",
+              "slug": "chii_devtools",
+              "description": "使用 Chii 进行远程调试",
+              "version": "1.0.0",
+              "authors": [
+                  {
+                      "name": "沫烬染",
+                      "link": "https://github.com/mo-jinran"
+                  }
+              ],
+              "platform": [
+                  "win32",
+                  "linux",
+                  "darwin"
+              ],
+              "injects": {
+                  "renderer": "./src/renderer.js",
+                  "main": "./src/main.js",
+                  "preload": "./src/preload.js"
+              },
+              "repository": {
+                  "repo": "mo-jinran/chii-devtools",
+                  "branch": "v4",
+                  "release": {
+                      "tag": "1.0.0",
+                      "file": "chii-devtools.zip"
+                  }
+              }
+          },
+          "incompatible": false,
+          "disabled": false,
+          "path": {
+              "plugin": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\chii-devtools",
+              "data": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\data\\chii_devtools",
+              "injects": {
+                  "main": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\chii-devtools\\src\\main.js",
+                  "preload": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\chii-devtools\\src\\preload.js",
+                  "renderer": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\chii-devtools\\src\\renderer.js"
+              }
+          }
+      },
+      "DemoMode": {
+          "manifest": {
+              "manifest_version": 4,
+              "type": "extension",
+              "name": "演示模式",
+              "slug": "DemoMode",
+              "description": "对 QQ 界面上的元素进行模糊处理以便演示或截图",
+              "version": "2.1.1",
+              "icon": "./icon.svg",
+              "thumb": "./icon.svg",
+              "authors": [
+                  {
+                      "name": "谦虚",
+                      "link": "https://github.com/qianxuu"
+                  }
+              ],
+              "platform": [
+                  "win32",
+                  "linux",
+                  "darwin"
+              ],
+              "injects": {
+                  "main": "./src/main.js",
+                  "preload": "./src/preload.js",
+                  "renderer": "./src/renderer.js"
+              },
+              "repository": {
+                  "repo": "qianxuu/LiteLoaderQQNT-Plugin-Demo-Mode",
+                  "branch": "main"
+              }
+          },
+          "incompatible": false,
+          "disabled": false,
+          "path": {
+              "plugin": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\LiteLoaderQQNT-Plugin-Demo-Mode",
+              "data": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\data\\DemoMode",
+              "injects": {
+                  "main": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\LiteLoaderQQNT-Plugin-Demo-Mode\\src\\main.js",
+                  "preload": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\LiteLoaderQQNT-Plugin-Demo-Mode\\src\\preload.js",
+                  "renderer": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\LiteLoaderQQNT-Plugin-Demo-Mode\\src\\renderer.js"
+              }
+          }
+      },
+      "telegram_theme": {
+          "manifest": {
+              "manifest_version": 4,
+              "type": "theme",
+              "name": "Telegram Theme",
+              "slug": "telegram_theme",
+              "description": "高仿 Telegram 风格的 QQNT 主题",
+              "version": "4.2.3",
+              "icon": null,
+              "authors": [
+                  {
+                      "name": "festoney8",
+                      "link": "https://github.com/festoney8"
+                  }
+              ],
+              "platform": [
+                  "win32",
+                  "linux",
+                  "darwin"
+              ],
+              "injects": {
+                  "renderer": "./src/renderer.js",
+                  "main": "./src/main.js",
+                  "preload": "./src/preload.js"
+              },
+              "repository": {
+                  "repo": "festoney8/LiteLoaderQQNT-Telegram-Theme",
+                  "branch": "v4",
+                  "release": {
+                      "tag": "latest",
+                      "file": "LiteLoaderQQNT-Telegram-Theme.zip"
+                  }
+              }
+          },
+          "incompatible": false,
+          "disabled": true,
+          "path": {
+              "plugin": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\LiteLoaderQQNT-Telegram-Theme",
+              "data": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\data\\telegram_theme",
+              "injects": {
+                  "main": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\LiteLoaderQQNT-Telegram-Theme\\src\\main.js",
+                  "preload": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\LiteLoaderQQNT-Telegram-Theme\\src\\preload.js",
+                  "renderer": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\LiteLoaderQQNT-Telegram-Theme\\src\\renderer.js"
+              }
+          }
+      },
+      "lite_tools": {
+          "manifest": {
+              "manifest_version": 4,
+              "type": "extension",
+              "name": "轻量工具箱",
+              "slug": "lite_tools",
+              "description": "轻量 · 优雅 · 高效",
+              "version": "2.23.5",
+              "icon": "./icon.png",
+              "authors": [
+                  {
+                      "name": "曦月",
+                      "link": "https://github.com/xiyuesaves"
+                  }
+              ],
+              "platform": [
+                  "win32",
+                  "linux",
+                  "darwin"
+              ],
+              "injects": {
+                  "renderer": "./src/renderer.js",
+                  "main": "./dist/main.js",
+                  "preload": "./src/preload.js"
+              },
+              "repository": {
+                  "repo": "xiyuesaves/LiteLoaderQQNT-lite_tools",
+                  "branch": "v4",
+                  "release": {
+                      "tag": "v2.23.5",
+                      "file": "lite_tools_v4.zip"
+                  }
+              }
+          },
+          "incompatible": false,
+          "disabled": false,
+          "path": {
+              "plugin": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\lite_tools_v4",
+              "data": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\data\\lite_tools",
+              "injects": {
+                  "main": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\lite_tools_v4\\dist\\main.js",
+                  "preload": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\lite_tools_v4\\src\\preload.js",
+                  "renderer": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\lite_tools_v4\\src\\renderer.js"
+              }
+          }
+      },
+      "transitio": {
+          "manifest": {
+              "manifest_version": 4,
+              "type": "theme",
+              "name": "Transitio",
+              "slug": "transitio",
+              "description": "🪄 自定义 CSS 片段加载器",
+              "version": "1.2.0",
+              "icon": "./icons/icon.svg",
+              "thumb": "./icons/thumb.svg",
+              "authors": [
+                  {
+                      "name": "PRO-2684",
+                      "link": "https://github.com/PRO-2684"
+                  }
+              ],
+              "repository": {
+                  "repo": "PRO-2684/transitio",
+                  "branch": "main",
+                  "release": {
+                      "tag": "v1.2.0",
+                      "file": "transitio-release.zip"
+                  }
+              },
+              "store": {
+                  "repo": "PRO-2684/transitio",
+                  "branch": "main",
+                  "save_folder": "./styles/"
+              },
+              "platform": [
+                  "win32",
+                  "linux",
+                  "darwin"
+              ],
+              "injects": {
+                  "renderer": "./renderer.js",
+                  "main": "./main.js",
+                  "preload": "./preload.js"
+              }
+          },
+          "incompatible": false,
+          "disabled": true,
+          "path": {
+              "plugin": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\transitio-release",
+              "data": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\data\\transitio",
+              "injects": {
+                  "main": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\transitio-release\\main.js",
+                  "preload": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\transitio-release\\preload.js",
+                  "renderer": "C:\\Users\\admin\\Desktop\\LiteLoaderQQNT\\plugins\\transitio-release\\renderer.js"
+              }
+          }
+      }
+  },
+  "api": {
+      "config": {}
+  }
+}
